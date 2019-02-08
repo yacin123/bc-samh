@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {console.log(`Logged in as ${client.user.tag}!`);});
 const config = require('./config.json');
-const prefixbc = config.prefix;
+const prefixbc = config.prefix;-
 client.on('message', async message => {  
 if(message.author.bot) return;
 if(message.channel.type === 'dm') return;
